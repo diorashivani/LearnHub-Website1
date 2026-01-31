@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #f4f7fb;
+}
+
+header {
+  background: #523d35;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+header h1 {
+  font-size: 22px;
+}
+.navbar {
+  background-color: #523d35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* space between items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6b513e, #b09c8d);
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  color: #855d28;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #f1f1f1;
+}
+
+.why-choose {
+  text-align: center;
+  padding: 40px 0;
+  background: #fff;
+}
+
+.why-choose h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Cards container */
+.choose-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.choose-card {
+  width: 260px;
+  padding: 25px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-5px);
+}
+
+.choose-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.choose-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.stats {
+  background: linear-gradient(135deg, #6b513e, #b09c8d);
+  margin: 40px auto;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat h2 {
+  color: #fff;
+}
+
+.stat p {
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  background-color: #221d16;
+  color: #dcdcdc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer span {
+  color: #836d36;
+}

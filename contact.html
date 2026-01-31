@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    
+      <style > * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #f4f7fb;
+      }
+
+    header {
+        background: #523d35;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      .navbar {
+        background-color: #523d35;
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+         padding: 15px 50px;
+      }
+
+
+      .nav-links {
+        list-style: none;
+         display: flex;
+       gap: 25px;   /* space between items */
+          margin: 0;
+        padding: 0;
+            }
+
+      .nav-links li {
+        cursor: pointer;
+      }
+
+      .nav-links a {
+       color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+       padding: 6px 12px;
+      transition: background 0.3s;
+      }
+
+
+      .nav-links a:hover {
+             background-color: rgba(255, 255, 255, 0.2);
+             border-radius: 5px;
+        }
+      
+
+      .contact-container{
+        width: 90%;
+        max-width: 1100px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      }
+
+      .contact-wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+      }
+      .contact-info{
+        width: 50%;
+      }
+
+      .contact-info h2{
+        margin-bottom: 10px;
+      }
+
+      .contact-info p{
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .info-box{
+        background: #f1f6fb;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      .info-box h4{
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .info-box p{
+        font-size: 13px;
+        color: #555;
+      }
+
+      .contact-form{
+        width: 55%;
+      }
+
+      .contact-form h2{
+        margin-bottom: 15px;
+      }
+
+      .contact-form label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+    .contact-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background:  #544735;;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contact-form button:hover {
+  background: #836d36;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+ footer {
+      width: 100%;
+      background-color:  #221d16;
+      color: #dcdcdc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer span {
+      color: #836d36;
+    }
+    </style>
+  </head>
+
+
+  <body>
+        <header class="navbar">
+  <h1> 📘 LearnHub</h1>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="enrolment.html">Enroll</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+
+    <div class="contact-wrapper">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>
+          Have Question? We'd love to hear from you,send a message and we'll
+          respond as soon as possible.
+        </p>
+
+        <div class="info-box">
+          <h4>Email</h4>
+          <p>info@learnhub.com<br />support@learnhub.com</p>
+        </div>
+
+        <div class="info-box">
+          <h4>Phone</h4>
+          <p>+91 1234567890<br />Mon–Fri: 9:00 AM – 6:00 PM</p>
+        </div>
+
+        <div class="info-box">
+          <h4>Address</h4>
+          <p>123 Education Street<br />Bangalore, Karnataka 560001</p>
+        </div>
+
+        <div class="info-box"
+        <h4>Businness Hours</h4>
+        <o>>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</o>
+      </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Your Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Subject</label>
+
+            <select>
+                <option>Select a subject</option>
+                <option>General Inquiry</option>
+                <option>Support</option>
+                <option>Feedback</option>
+
+            </select>
+
+            <label>Message</label>
+             <textarea placeholder="Write your message here..."></textarea>
+
+             <button type="btn">Send Message</button>
+        </form>
+    </div>
+</div>
+</div>
+
+   <footer>
+    <p>© 2026 LearnHub. All rights reserved.</p>
+    <p>Email: <span>info@learnhub.com</span> | Phone: <span>+91 1234567890</span></p>
+  </footer>
+    
+  </body>
+</html>
