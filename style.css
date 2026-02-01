@@ -24,13 +24,13 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 0px 50px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px; /* space between items */
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@ header h1 {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  padding: 6px 12px;
+  padding: 3px 12px;
   transition: background 0.3s;
 }
 
@@ -60,11 +60,24 @@ header h1 {
   padding: 50px;
   text-align: center;
   color: #fff;
+  animation: slideFromRight 1.2s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .hero h2 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 10px;
+  animation: fadeUp 1s ease forwards;
 }
 
 .hero p {
@@ -80,10 +93,21 @@ header h1 {
   font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
+  animation: fadeUp 1.4s ease forwards;
 }
 
 .hero button:hover {
   background: #f1f1f1;
+}
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .why-choose {
@@ -98,7 +122,6 @@ header h1 {
   color: #333;
 }
 
-/* Cards container */
 .choose-container {
   display: flex;
   justify-content: center;
@@ -112,11 +135,23 @@ header h1 {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease forwards;
   transition: transform 0.3s ease;
 }
 
 .choose-card:hover {
   transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .choose-card h3 {
@@ -140,6 +175,18 @@ header h1 {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  animation: slideFromLeft 1.2s ease forwads;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .stat h2 {
@@ -147,7 +194,17 @@ header h1 {
 }
 
 .stat p {
+  animation: pageLoad 0.8s ease-in;
   font-size: 13px;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -157,6 +214,7 @@ footer {
   text-align: center;
   padding: 20px 10px;
   font-size: 13px;
+  animation: fooerUo 1s ease forwards;
 }
 
 footer p {
@@ -165,4 +223,15 @@ footer p {
 
 footer span {
   color: #836d36;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
