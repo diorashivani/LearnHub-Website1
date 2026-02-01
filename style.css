@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background: #f4f7fb;
+  background: #ada18b;
 }
 
 header {
@@ -30,6 +30,7 @@ header h1 {
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -41,7 +42,7 @@ header h1 {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 14px;
   padding: 3px 12px;
   transition: background 0.3s;
 }
@@ -110,11 +111,13 @@ header h1 {
 }
 
 .why-choose {
+  width: 70%;
+  margin: 60px auto;
   text-align: center;
-  padding: 40px 0;
-  background: #fff;
+  padding: 30px 0;
+  background: #8f8069;
+  border-radius: 8px;
 }
-
 .why-choose h2 {
   font-size: 22px;
   margin-bottom: 30px;
@@ -124,7 +127,7 @@ header h1 {
 .choose-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -161,7 +164,7 @@ header h1 {
 
 .choose-card p {
   font-size: 13px;
-  color: #666;
+  color: #0c0a0a;
   line-height: 1.5;
 }
 
@@ -174,7 +177,13 @@ header h1 {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  animation: slideFromLeft 1.2s ease forwads;
+}
+
+.stat {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
 }
 
 @keyframes slideFromLeft {
@@ -187,16 +196,24 @@ header h1 {
     opacity: 1;
   }
 }
+.stat child {
+  animation-delay: 02s;
+}
 
 .stat h2 {
   color: #fff;
 }
 
 .stat p {
-  animation: pageLoad 0.8s ease-in;
   font-size: 13px;
 }
 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes slideFromLeft {
   from {
     opacity: 0;
@@ -213,7 +230,6 @@ footer {
   text-align: center;
   padding: 20px 10px;
   font-size: 13px;
-  animation: fooerUo 1s ease forwards;
 }
 
 footer p {
@@ -223,19 +239,3 @@ footer p {
 footer span {
   color: #836d36;
 }
-
-@keyframes slideFromLeft {
-  from {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-
-
-

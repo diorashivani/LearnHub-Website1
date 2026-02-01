@@ -13,8 +13,19 @@
         font-family: Arial, sans-serif;
       }
       body {
-        background: #f5f7fb;
+        background: #ada18b;
         color: #333;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
       header {
         background: #523d35;
@@ -27,18 +38,19 @@
       header h1 {
         font-size: 22px;
       }
+
       .navbar {
         background-color: #523d35;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 50px;
+        padding: 0px 50px;
       }
 
       .nav-links {
         list-style: none;
         display: flex;
-        gap: 25px; /* space between items */
+        gap: 10px;
         margin: 0;
         padding: 0;
       }
@@ -51,7 +63,7 @@
         color: #fff;
         text-decoration: none;
         font-size: 14px;
-        padding: 6px 12px;
+        padding: 3px 12px;
         transition: background 0.3s;
       }
 
@@ -68,6 +80,18 @@
         padding: 60px 20px;
         text-align: center;
         color: #fff;
+        animation: slideDown 1.2s ease-out forwards;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateX(0px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0.3s);
+          opacity: 1;
+        }
       }
 
       .title-section h1 {
@@ -95,6 +119,12 @@
         padding: 15px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         text-align: center;
+
+        opacity: 0;
+        animation: fadeUp 0.8s ease forwards;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
       }
 
       .card-img {
@@ -126,6 +156,15 @@
         margin-bottom: 10px;
       }
 
+      .enroll-link {
+        color: #c3a190;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .enroll-link:hover {
+        color: #ba8f73;
+      }
       .course-card button {
         background: #544735;
         color: white;
@@ -133,10 +172,15 @@
         padding: 8px 15px;
         border-radius: 4px;
         cursor: pointer;
+        animation: pulse 2.5s infinite;
+        transition:
+          background 0.3s ease,
+          transform 0.3s ease;
       }
 
       .course-card button:hover {
         background: #836d36;
+        transform: scale(1.1);
       }
 
       .gradient1 {
@@ -198,7 +242,9 @@
         <h3>Complete Web Development Course</h3>
         <p>Learn HTML,CSS, JavaScript and modern frameworks.</p>
         <span class="price">₹2,999</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
 
       <div class="course-card">
@@ -206,7 +252,9 @@
         <h3>Python Programming Masterclass</h3>
         <p>Master Python from basics to advanced concepts.</p>
         <span class="price">₹2,499</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
 
       <div class="course-card">
@@ -214,7 +262,9 @@
         <h3>Data Science Fundamentals</h3>
         <p>Learn data analysis, statistics and machine learning.</p>
         <span class="price">₹3,499</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
 
       <div class="course-card">
@@ -222,7 +272,9 @@
         <h3>Mobile App Development</h3>
         <p>Build Android & iOS apps using modern tools.</p>
         <span class="price">₹3,999</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
 
       <div class="course-card">
@@ -230,7 +282,9 @@
         <h3>UI/UX Design Complete Course</h3>
         <p>Design stunning and user-friendly interfaces.</p>
         <span class="price">₹2,799</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
 
       <div class="course-card">
@@ -238,7 +292,9 @@
         <h3>Artificial Intelligence Basics</h3>
         <p>Introduction to AI concepts and real-world use.</p>
         <span class="price">₹4,499</span>
-        <button>Enroll Now</button>
+        <button>
+          <a href="enrolment.html" class="enroll-link">Enroll Now</a>
+        </button>
       </div>
     </section>
 
