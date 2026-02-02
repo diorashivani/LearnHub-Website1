@@ -16,48 +16,21 @@
         background: #ada18b;
       }
 
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      header {
-        background: #523d35;
-        padding: 15px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-      header h1 {
-        font-size: 22px;
-      }
-
       .navbar {
-        background-color: #523d35;
+        background: #523d35;
         padding: 12px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
 
-      .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 3px;
-        margin-left: 20px;
+      .navbar .logo {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
       }
 
-      .nav-links li {
-        cursor: pointer;
-      }
-
-      .nav-links a {
+      .navbar nav a {
         color: #fff;
         margin-left: 15px;
         text-decoration: none;
@@ -69,6 +42,16 @@
         border-radius: 5px;
       }
 
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       .title-section {
         margin: 40px auto;
         width: 85%;
@@ -218,14 +201,13 @@
   </head>
   <body>
     <header class="navbar">
-      <h1>📘 LearnHub</h1>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="enrolment.html">Enroll</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="logo">📘 LearnHub</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="enrolment.html">Enroll</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <section class="title-section">

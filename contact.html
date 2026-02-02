@@ -15,48 +15,25 @@
         background: #ada18b;
       }
 
-    header {
-        background: #523d35;
-        padding: 15px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-      header h1 {
-        font-size: 22px;
-      }
-     
-.navbar {
-  background-color: #523d35;
+   .navbar {
+  background: #523d35;
   padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-links {
- list-style: none;
-        display: flex;
-        gap: 11x;
-        margin-left: 15px;
-}
-
-.nav-links li {
-  cursor: pointer;
-}
-
-.nav-links a {
+.navbar .logo {
   color: #fff;
-        margin-left: 15px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: background 0.3s;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+.navbar nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
 }
       
 
@@ -193,18 +170,15 @@
   </head>
 
 
-  <body>
-        <header class="navbar">
-  <h1> 📘 LearnHub</h1>
-
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="enrolment.html">Enroll</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</header>
-
+   <header class="navbar">
+      <div class="logo">📘 LearnHub</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="enrolment.html">Enroll</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
     <div class="contact-wrapper">
     <div class="contact-container">
@@ -272,4 +246,3 @@
     
   </body>
 </html>
-
